@@ -1,0 +1,253 @@
+*
+{
+    margin:0;
+    padding:0;
+}
+body,html{
+    overflow-x: hidden;
+}
+.line
+{
+    background-color: #FF2171;
+    width:150px;
+    height:4px;
+    justify-content: center;
+    align-items: center;
+    margin:10px auto;
+    border-radius: 5px;
+}
+.navbar, .navbar-conatiner, .navbar-expand-lg, .navbar
+{
+    background-color: transparent;
+}
+.logo-img{
+    margin-left: 20px;
+}
+.nav-item
+{
+    padding:0px 15px 0px 15px;
+}
+.nav-link, .navbar-nav
+{
+    color:whitesmoke;
+    font-weight:bold;   
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+a:hover{
+    text-decoration:underline #FF2171;
+}
+.active
+{
+    text-decoration:underline #FF2171;
+}
+.form-control
+{
+    width:120%;
+}
+.btn
+{
+    background-color: #FF2171;   
+    color: whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.ctn
+{
+    background-color: #FF2171;
+    padding:5px;
+    margin-top: 3px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.ctn1
+{
+    background-color: #FF2171;
+    padding:5px;
+    margin-top: 3px;
+    border-radius: 15px;
+    color: whitesmoke;
+    font-weight: bold;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    justify-content: center;
+}
+
+
+/*EVENT  */
+section{
+    width:80%;
+    margin:80px auto;
+}
+.title
+{
+    text-align: center;
+    font-size: 4vmin;
+    color:#49497e
+}
+.row
+{
+    display: flex;
+    align-content: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.row .col img{
+    width:80%;
+flex-direction: column;
+align-items: center;
+}
+.event .row{
+    margin-top: 50px;
+}
+h4{
+    font-size: 3vmin;
+    color:#49497e;
+    margin: 20px auto;
+}
+p{
+    color:#7c7c7c;
+    padding: 0px 40px;
+}
+.lern-btn{
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Explore   */
+.explore{
+    width:100%;
+    height:100vh;
+    background-image:url('Images/explore1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+.explore-content
+{
+    width:60%;
+    padding:50px;
+    color:whitesmoke;
+    font-family:'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.explore-content h1{
+    font-size: 7vmin;
+}
+.explore-content line{
+    margin-bottom: 20px;
+}
+.explore-content p{
+    color:rgb(221, 221, 221);
+}
+.explore-content .btn{
+    margin-top:40px;
+}
+/* Tour */
+.tour{
+    width: 100%;
+}
+.tour-title
+{
+    justify-content: center;
+    align-items: center;
+}
+.row{
+    width: 100%;
+}
+.col{
+    width: 50%;
+    justify-content: center;
+    align-content: center;
+}
+.content-col{
+    width: 40%;
+}
+.img-col
+{
+    width: 60%;
+}
+.tour .image-gallary{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+.image-gallary img{
+max-width: 300px;
+margin: 10px;
+}
+.line-destination
+{
+    margin-left: 5rem;
+}
+.tour-btn{
+    margin-left: 12rem;
+}
+.content-col h1{
+    font-size: 7vmin;
+    color:#49497e;
+    margin-top: 15rem;
+    margin-left:23px;
+    align-items: center;
+    justify-content: center;
+}
+.footer
+{
+    width: 100%;
+    min-height:100px;
+    padding: 20px 80px;
+    margin: 0px;
+    background-color: #49497e;
+    text-align: center;
+}
+.footer p{
+    color:whitesmoke;
+    margin: 20px auto;
+    padding: 20px auto;
+
+}
+
+/*Mobile DEvice */
+@media only screen and (max-width: 850px) {
+/*  EVENT*/
+
+.row{
+    flex-direction: column;
+}
+.row .col{
+    margin:20px auto;
+}
+.col img{
+    max-width:90%;
+}
+/*  explore*/
+    .explore-content{
+        width:100%
+    }
+    .tours .col{
+        width: 100%;
+    }
+    .image-gallary{
+        justify-content: center;
+        align-items: center;
+    }
+    .image-gallary img{
+        width: 90%;
+
+    }
+    .footer{
+    padding: 10px;
+    }
+}
+.images{
+    transition:trasform.3s ease;
+}
+.images:hover{
+    transform:scale(1.1);
+}
